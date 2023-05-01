@@ -13,6 +13,10 @@ A program for distributing tokens efficiently via uploading a [Merkle root](http
 
 This program is largely based off of [Uniswap's Merkle Distributor](https://github.com/Uniswap/merkle-distributor).
 
+## Running locally
+
+`yarn && yarn setup`
+
 ## Rationale
 
 Although Solana has low fees for executing transactions, it requires staking tokens to pay for storage costs, also known as "rent". These rent costs can add up when sending tokens to thousands or tens of thousands of wallets, making it economically unreasonable to distribute tokens to everyone.

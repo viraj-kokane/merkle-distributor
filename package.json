@@ -70,7 +70,8 @@
     "test": "anchor test --skip-build tests/*.ts",
     "prepare": "husky install",
     "idl:generate": "./scripts/idl.sh && ./scripts/generate-idl-types.sh",
-    "idl:generate:nolint": "./scripts/idl.sh && RUN_ESLINT=none ./scripts/generate-idl-types.sh"
+    "idl:generate:nolint": "./scripts/idl.sh && RUN_ESLINT=none ./scripts/generate-idl-types.sh",
+    "setup": "anchor build && yarn idl:generate"
   },
   "dependencies": {
     "js-sha3": "^0.8.0",
