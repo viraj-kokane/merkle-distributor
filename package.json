@@ -1,7 +1,7 @@
 {
-  "name": "@saberhq/merkle-distributor",
-  "version": "0.3.5",
-  "description": "TypeScript SDK for a Solana program for distributing tokens according to a Merkle root.",
+  "name": "@coral-xyz/merkle-distributor",
+  "version": "0.3.5-beta.1",
+  "description": "Fork of @saber-hq/merkle-distributor.",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
@@ -17,15 +17,12 @@
     "saber"
   ],
   "bugs": {
-    "url": "https://github.com/saber-hq/merkle-distributor/issues",
-    "email": "ian@ship.capital"
+    "url": "https://github.com/coral-xyz/merkle-distributor/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saber-hq/merkle-distributor.git"
+    "url": "git+https://github.com/coral-xyz/merkle-distributor.git"
   },
-  "author": "Saber Team <team@saber.so>",
-  "homepage": "https://saber.so",
   "license": "GPL-3.0",
   "publishConfig": {
     "access": "public"
@@ -50,7 +47,7 @@
     "eslint": "^8.17.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.26.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "jsbi": "^4.3.0",
     "lint-staged": "^13.0.1",
     "mocha": "^10.0.0",
