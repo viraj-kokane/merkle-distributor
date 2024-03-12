@@ -71,6 +71,7 @@
     "setup": "anchor build && yarn idl:generate"
   },
   "dependencies": {
+    "bigint-buffer": "^1.1.5",
     "js-sha3": "^0.8.0",
     "superstruct": "^0.16.0",
     "tiny-invariant": "^1.2.0",

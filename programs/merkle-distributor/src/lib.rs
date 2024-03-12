@@ -20,7 +20,7 @@ use vipers::prelude::*;
 
 pub mod merkle_proof;
 
-declare_id!("DRoPZqPL5hjVsDyjokqKqMrW6DLzhGimjowQ9XSZHvrF");
+declare_id!("E4TrccmubxwNNdHQitRsbbMoumoYd1HPVJ7Rp2R1MMek");
 
 /// The [merkle_distributor] program.
 #[program]

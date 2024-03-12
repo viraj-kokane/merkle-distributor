@@ -1,5 +1,5 @@
 anchor_version = "0.24.2"
-solana_version = "1.9.12"
+solana_version = "1.14.28"
 
 [features]
 seeds = true
@@ -8,20 +8,20 @@ seeds = true
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
-wallet = "./tests/test-key.json"
+cluster = "devnet"
+wallet = "/Users/virajkokane/.config/solana/id.json"
 
 [programs.mainnet]
-merkle_distributor = "DRoPZqPL5hjVsDyjokqKqMrW6DLzhGimjowQ9XSZHvrF"
+merkle_distributor = "E4TrccmubxwNNdHQitRsbbMoumoYd1HPVJ7Rp2R1MMek"
 
 [programs.devnet]
-merkle_distributor = "DRoPZqPL5hjVsDyjokqKqMrW6DLzhGimjowQ9XSZHvrF"
+merkle_distributor = "E4TrccmubxwNNdHQitRsbbMoumoYd1HPVJ7Rp2R1MMek"
 
 [programs.testnet]
-merkle_distributor = "DRoPZqPL5hjVsDyjokqKqMrW6DLzhGimjowQ9XSZHvrF"
+merkle_distributor = "E4TrccmubxwNNdHQitRsbbMoumoYd1HPVJ7Rp2R1MMek"
 
 [programs.localnet]
-merkle_distributor = "DRoPZqPL5hjVsDyjokqKqMrW6DLzhGimjowQ9XSZHvrF"
+merkle_distributor = "E4TrccmubxwNNdHQitRsbbMoumoYd1HPVJ7Rp2R1MMek"
 
 [scripts]
 test = "yarn mocha"
