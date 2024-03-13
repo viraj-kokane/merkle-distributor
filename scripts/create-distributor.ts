@@ -49,7 +49,7 @@ const main = async () => {
   const keypair = readKeyfile(
     process.env.PAYER_KEYFILE ?? "/Users/virajkokane/.config/solana/id.json"
   );
-  console.log(keypair);
+  // console.log(keypair);
 
   const provider = new SolanaProvider(
     connection,
@@ -59,8 +59,8 @@ const main = async () => {
 
   const sdk = MerkleDistributorSDK.load({ provider });
   // invariant(process.env.MINT_KEYFILE, "mint keyfile not found");
-  const mintKeypair = readKeyfile(process.env.MINT_KEYFILE ?? "/Users/virajkokane/.config/solana/id.json");
-  console.warn("mint key pair: ", mintKeypair);
+  // const mintKeypair = readKeyfile(process.env.MINT_KEYFILE ?? "/Users/virajkokane/.config/solana/id.json");
+  // console.warn("mint key pair: ", mintKeypair);
   let x = new u64(tokenTotal);
   let y = new u64(Object.keys(claims).length);
   console.log(x.toString(), y.toString());

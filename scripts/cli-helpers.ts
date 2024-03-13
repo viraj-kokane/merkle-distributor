@@ -4,9 +4,9 @@ import { u64 } from "@saberhq/token-utils";
 import * as fs from 'fs';
 import { AnchorProvider, setProvider, Wallet } from "@project-serum/anchor";
 import snapshot from '../data/airdrop-amounts.json'
-import { SolanaProvider, TransactionEnvelope } from "@saberhq/solana-contrib";
+import { SolanaProvider } from "@saberhq/solana-contrib";
 import { chaiSolana } from "@saberhq/chai-solana";
-import chai, { expect } from "chai";
+import chai from "chai";
 chai.use(chaiSolana);
 
 
@@ -33,10 +33,12 @@ export const setupEnv = () => {
     const decodedKey = new Uint8Array(
         JSON.parse(
             //replace with actual path from home dir. For example '.config/solana/devnet.json'
-            fs.readFileSync('./cli/admin.json', 'utf8')
+            fs.readFileSync('key.json', 'utf8')
         ));
 
     let adminWallet = Keypair.fromSecretKey(decodedKey);
+
+    console.log("admin wall", (adminWallet.publicKey).toBase58());
 
     const anchorProvider = new AnchorProvider(connection, new Wallet(adminWallet), {
         commitment: 'confirmed',
