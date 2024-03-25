@@ -34,7 +34,7 @@
     "@saberhq/chai-solana": "^1.13.28",
     "@saberhq/eslint-config": "^1.13.28",
     "@saberhq/solana-contrib": "^1.13.28",
-    "@saberhq/token-utils": "^1.13.28",
+    "@saberhq/token-utils": "^2.0.0",
     "@saberhq/tsconfig": "^1.13.28",
     "@solana/web3.js": "^1.44.0",
     "@types/bn.js": "^5.1.0",
